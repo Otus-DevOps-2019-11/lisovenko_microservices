@@ -1,6 +1,16 @@
 # lisovenko_microservices
 lisovenko microservices repository
 
+Docker-3
+
+1. Создана новая ветка docker3;
+2. На ранее созданном docker хосте установлено приложение из трех компонентов;
+3. Работа с Dockerfile;
+4. Оптимизация размера образа ui;
+5. Создаем docker volume reddit_db и подключаем его к MongoDB.
+
+
+
 Docker-2
 
 1. Добавлен новый репозиторий;
