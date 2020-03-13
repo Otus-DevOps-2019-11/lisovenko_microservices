@@ -1,0 +1,5 @@
+17:58 $ docker images
+REPOSITORY                  TAG                 IMAGE ID            CREATED             SIZE
+lisovenko/ubuntu-tmp-file   latest              5d3787a7b792        6 seconds ago       124MB
+ubuntu                      16.04               77be327e4b63        2 weeks ago         124MB
+hello-world                 latest              fce289e99eb9        14 months ago       1.84kB
