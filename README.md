@@ -1,6 +1,18 @@
 # lisovenko_microservices
 lisovenko microservices repository
 
+kubernetes-3
+
+1. Создана новая ветка kubernetes-3;
+2. Рассмотрен плагин kube-dns, предоставляющий DNS сервис;
+3. Рассмотрен Ingress Controller;
+4. Настроен балансировщик нагрузки;
+5. Внедрение для приложения TLS;
+6. Настроен прием только HTTPS траффика;
+7. Рассмотрены network policy;
+8. Рассмотрен механизмы PersistentVolume и PersistentVolumeClaim.
+
+
 kubernetes-2
 
 1. Создана ветка kubernetes-2;
