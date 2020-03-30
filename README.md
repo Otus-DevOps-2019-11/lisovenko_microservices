@@ -1,6 +1,30 @@
 # lisovenko_microservices
 lisovenko microservices repository
 
+Monitoring-1
+
+1. Создана новая ветка monitoring-1;
+2. Создаем новые правила фаерволла для Prometheus и Puma;
+3. Создание docker хоста;
+4. Запуск готового образа Prometheus с DockerHub;
+5. Рассмотрены стандартные метрики;
+6. Рассмотрены targets;
+7. Собираем на основе готового образа из Dockerhub свой docker образ:
+ - Создаем Dockerfile, который будет копировать файл конфигурации с нашей машины внутрь контейнера;
+ - Определяем собираемые метрики в prometheus.yml;
+ - Собираем docker образ Prometheus;
+ - Собриаем docker образы при помощи скриптов docker_build.sh в каждой директории;
+ - Определяем в docker-compose.yml новый сервис - Prometheus;
+ - Удаляем директивы build в виду использования скрипта docker_build.sh для сборки образов docker;
+ - Добавлена секция networks для сервиса Prometheus в docker-compose.yml для общения по сети с другими сервисами;
+ - Поднятие сервисов, приложение и Prometheus - запустились.
+8. Настройка отслеживания состояния микросервисов;
+9. Использование Exporters.
+
+https://hub.docker.com/u/lisovenko
+
+
+
 Gitlab-ci-1
 
 1. Создана новая ветка gitlab-ci-1;
