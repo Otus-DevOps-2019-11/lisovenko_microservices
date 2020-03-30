@@ -1,6 +1,34 @@
 # lisovenko_microservices
 lisovenko microservices repository
 
+kubernetes-2
+
+1. Создана ветка kubernetes-2;
+2. Установка и запуск Minikube;
+minikube start
+3. Проверка, что minikube-кластер развернут;
+kubectl get nodes
+4. Рассмотрена конфигурация kubectl, информацию можно посмотреть по ~/.kube/config;
+kubectl конфигурируется для подключения к разным кластерам, под разными пользователями.
+Текущий контекст: kubectl config current-context
+Список всех контекстов: kubectl config get-contexts
+5. Описание состояния приложения в yaml-манифестах в директории kubernetes/reddit;
+Основные объекты - ресурсы Deployment
+6. Рассмотрены возможности пробрасывания сетевых портов подов на локальную машину;
+kubectl port-forward <pod-name> local_port:pod_port
+7. Рассмотрен объект Service для связи компонентов между собой;
+8. Запуск и проверка kubectl apply -n dev -f reddit/;
+9. Рассмотрен тип сервиса NodePort для доступа к ui-сервису снаружи;
+10. Проверка через minikube service ui;
+11. Рассмотрен аддон dashboard и его возможности;
+Включить аддон: minikube addons enable dashboard
+Запуск: minikube dashboard
+12. Рассмотрены namespace;
+13. Разделение среды для разработки приложения от всего остального кластера;
+14. Разворачиваем кластер Kubernetes в GCP;
+15. Запускаем приложение в GCP.
+
+
 kubernetes-1
 
 1. Создана новая ветка kubernetes-1;
