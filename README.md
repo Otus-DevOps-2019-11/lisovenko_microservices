@@ -1,6 +1,21 @@
 # lisovenko_microservices
 lisovenko microservices repository
 
+Monitoring-2
+
+1. Создана новая ветка monitoring-2;
+2. Подготовка окружения, создание docker-host;
+3. Выделение мониторинга из docker-compose.yml в docker-compose-monitoring.yml;
+4. Запуск сервисов;
+5. Знакомство с cAdvisor ui;
+6. Внесение инструмента Grafana в docker-compose-monitoring.yml и выбор dashboard;
+7. Создание dashboards для Grafana;
+8. Настроил уведомление в slack от alertmanager.
+9. Запушил собранные вами образы на DockerHub
+
+https://hub.docker.com/u/lisovenko
+
+
 Monitoring-1
 
 1. Создана новая ветка monitoring-1;
