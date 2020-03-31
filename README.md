@@ -1,6 +1,17 @@
 # lisovenko_microservices
 lisovenko microservices repository
 
+kubernetes-1
+
+1. Создана новая ветка kubernetes-1;
+2. Пройден курс kubernetes-the-hard-way (3 контроллера, 1 воркер);
+3. Поды запустились;
+kubectl apply -f ui-deployment.yml
+kubectl apply -f post-deployment.yml
+kubectl apply -f mongo-deployment.yml
+kubectl apply -f comment-deployment.yml
+
+
 Logging-1
 
 1. Создана новая ветка logging-1;
