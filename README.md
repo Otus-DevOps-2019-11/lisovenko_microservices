@@ -1,6 +1,35 @@
 # lisovenko_microservices
 lisovenko microservices repository
 
+kubernetes-4
+
+1. Создана новая ветка kubernetes-4;
+2. Установка пакетного менеджера helm;
+3. Установка аддона tiller для обшения с API Kubernetes. Tiller является серверной частью helm-а;
+Создаем tiller.yml и запускаем tiller - сервер.
+helm init --service-account tiller
+Проверяем kubectl get pods -n kube-system --selector app=helm
+12:35 $ kubectl get pods -n kube-system --selector app=helm
+NAME                             READY   STATUS        RESTARTS   AGE
+tiller-deploy-6dbd4749b6-dk5hz   1/1     Running       1          6m19s
+tiller-deploy-6dbd4749b6-svkqt   0/1     Terminating   0          26m
+
+4. Создаем директорию Chart;
+5. Разработка Chart’а для компонента ui приложения в файле Chart.yaml;
+Перенос манифестов ui в ui/templates;
+6. Шаблонизируем service.yaml, deployment.yaml, ingress.yaml и определим значения в values.yaml;
+7. Установим несколько релизов ui и параметризируем значения;
+8. Собираем пакеты для остальных компонентов;
+9. Добавлен новый пул узлов для увеличения производительности;
+10. Добавлен репозиторий Gitlab;
+11. Запускаем gitlab и создаем новую группу с проектами ui, comment, post, reddit-deploy;
+12. Переносим исходные коды в Gitlab_ci/ui , /comment, /post и пушим в gitlab;
+13. Переносим содержимое директории Charts в Gitlab_ci/reddit-deploy и пушим в gitlab;
+14. Создаем .gitlab-ci.yml и пушим из директорий ui/, comment/, post/;
+15. Поправлены пайплайны сервисов comment и post.
+
+
+
 kubernetes-3
 
 1. Создана новая ветка kubernetes-3;

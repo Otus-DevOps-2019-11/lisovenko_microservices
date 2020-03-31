@@ -1,0 +1,1 @@
+34.77.39.48 gitlab-gitlab staging production tee -a /etc/hosts
