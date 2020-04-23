@@ -1,6 +1,14 @@
 # lisovenko_microservices
 lisovenko microservices repository
 
+kubernetes-5
+
+1. Создана новая ветка kubernetes-5;
+2. Развернуты Prometheus и Grafana;
+3. Настроены сборы метрик;
+4. Развернут EFK стек.
+
+
 kubernetes-4
 
 1. Создана новая ветка kubernetes-4;
